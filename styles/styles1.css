@@ -1,0 +1,129 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.container {
+  padding: 10px 16px;
+  margin: 0px;
+}
+
+.col-11 {
+  width: calc(8.3% * 11);
+}
+
+.logo {
+  width: calc 8.3%;
+}
+
+.saludos {
+  width: calc(8.3% * 11);
+}
+.desplegable_menu ul {
+  list-style-type: none;
+  background-color: #0000ec;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+  flex-direction: column;
+}
+.desplegable_menu ul li {
+  font-family: "IBMPlexMono";
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 28px;
+  padding: 0px 0px 24px 0px;
+  display: block;
+}
+.f-right {
+  float: right;
+}
+.desplegable_menu {
+  width: 100vh;
+}
+.desplegable_menu,
+#menu-toggle,
+#menu-toggle + .col-11 .fa-close,
+#menu-toggle:checked + .col-11 .fa-navicon {
+  display: none;
+}
+
+#menu-toggle:checked + .col-11 + .desplegable_menu,
+#menu-toggle:checked + .col-11 .fa-close {
+  display: initial;
+}
+
+.saludos h1 {
+  font-family: "IBMPlexSans", monospace;
+  font-size: 36px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+
+.saludos p {
+  font-family: "IBMPlexMono";
+  font-size: 14px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.conoce_mas button {
+  font-family: IBMPlexMono-Medium;
+  font-size: 16px;
+  color: #060a24;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+  background-color: #00f3bb;
+  width: 288px;
+  height: 48px;
+  border: black;
+}
+
+.phone_med {
+  width: 320px;
+  height: 519px;
+  position: relative;
+}
+
+.phone_med img {
+  position: absolute;
+  width: 320px;
+  height: 519px;
+}
+.galeria_mujeres {
+  width: 320px;
+  height: 243px;
+  position: relative;
+}
+
+.galeria_mujeres img {
+  width: 320px;
+  height: 243px;
+  position: absolute;
+}
+.episodios {
+  position: relative;
+  width: 320px;
+  height: 1203px;
+  background: blue;
+  color: cornsilk;
+  padding: 50px 20px;
+  clip-path: polygon(100% 0%, 295% 74%, 0% 98%, 0% 7%);
+}
+.spotify {
+  width: 100%;
+  height: 232px;
+  columns: ;
+}

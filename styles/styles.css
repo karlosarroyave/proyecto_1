@@ -1,0 +1,73 @@
+.container {
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 8.3%;
+}
+.col-11 {
+  width: calc(8.3% * 11);
+}
+.col-12 {
+  width: calc(8.3% * 12);
+}
+.img-fluid {
+  max-width: 100%;
+}
+.f-right {
+  float: right;
+}
+
+.menu,
+#menu-toggle,
+#menu-toggle + .col-11 .fa-close,
+#menu-toggle:checked + .col-11 .fa-bars {
+  display: none;
+}
+
+#menu-toggle:checked + .col-11 + .menu,
+#menu-toggle:checked + .col-11 .fa-close {
+  display: initial;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+/* episodios*/
+.episodios .clipped-background {
+  background: blue;
+  color: cornsilk;
+  padding: 50px 20px;
+  clip-path: polygon(100% 0%, 295% 74%, 0% 98%, 0% 7%);
+}
+
+h1 {
+  font-family: IBMPlexSans;
+  font-size: 36px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+p {
+  font-family: IBMPlexMono;
+  font-size: 14px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: justify;
+}
+.menu {
+  background-color: #0000ec;
+}
+
+.menu li {
+  font-family: IBMPlexMono;
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 28px;
+}
